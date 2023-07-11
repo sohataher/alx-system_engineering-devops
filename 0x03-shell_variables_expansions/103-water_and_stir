@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((water=WATER#water,stir=STIR#stir,water+stir))%bestchol
+echo $((water=0x$(echo -n "$WATER" | tr a-z 0-9a-z | tr water 01234),stir=0x$(echo -n "$STIR" | tr a-z 0-9a-z | tr stir 56789),water+stir))%bestchol
